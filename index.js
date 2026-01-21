@@ -1,6 +1,12 @@
-const fs = require('fs');
+let fs = require("fs");
+let utils = require("./stringUtils");  
 
-const text = fs.readFileSync('input.txt', 'utf8');
-const count = text.split(' ').length;
+let text = "hello world";
 
-fs.writeFileSync('output.txt', count.toString());
+let output = "";
+output += "Capitalized: " + utils.capitalize(text) + "\n";
+output += "Reversed: " + utils.reverse(text) + "\n";
+output += "Vowel Count: " + utils.countVowels(text);
+
+fs.writeFileSync("output.txt", output);
+

@@ -1,1 +1,3 @@
-1
+Capitalized: HELLO WORLD
+Reversed: dlrow olleh
+Vowel Count: 3
